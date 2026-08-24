@@ -1,0 +1,82 @@
+{
+  "sunrock-guesthouse": {
+    "name": "Sunrock Guesthouse",
+    "category": "stay",
+    "address": "11 Park Street, 1619 Kempton Park, South Africa",
+    "phone": "+27 76 666 0274",
+    "email": "info@sunrock.co.za",
+    "website": "https://www.tripadvisor.co.uk/Hotel_Review-g312579-d1563519-Reviews-Sunrock_Guesthouse-Kempton_Park_Ekurhuleni_Greater_Johannesburg_Gauteng.html",
+    "image": "/images/SunRock.jpg"
+  },
+  "avis-budget": {
+    "name": "Avis Budget Car Hire",
+    "category": "transport",
+    "contact_person": "Joy Matlala",
+    "phone": "+27 86 102 1111",
+    "direct_phone": "+27 11 387 8431",
+    "email": "joy.matlala@avisbudget.co.za",
+    "website": "https://www.avis.co.za"
+  },
+  "lower-sabie-rest-camp": {
+    "name": "Lower Sabie Rest Camp",
+    "category": "stay",
+    "address": "Lower Sabie, Kruger National Park, Sabie, 4184, South Africa",
+    "phone": "(012) 428-9111",
+    "fax": "(012) 343-0905",
+    "email_reservations": "reservations@sanparks.org",
+    "email_wildcard": "wildcard@sanparks.org",
+    "website": "https://www.sanparks.org",
+    "image": "/images/LowerSabie.jpg"
+  },
+  "jacana-river-lodge": {
+    "name": "Jacana River Lodge",
+    "category": "stay",
+    "address": "Mjejane Game Reserve | River Road, Erf 3 Portion 30, Hectorspruit, 3960, South Africa",
+    "phone_whatsapp": "+27 66 293 7100",
+    "email": "info@jacanariverlodge.com",
+    "website": "https://jacanariverlodge.com/",
+    "image": "/images/JacanaLodge.jpg"
+  },
+  "irving-knight-safaris": {
+    "name": "Irving Knight Safaris",
+    "category": "safari",
+    "address": "Contact via Mjejane River Lodge",
+    "phone": "+27 71 485 5721",
+    "website": "https://irvingknightsafaris.co.za/"
+  },
+  "airbnb-seacliff": {
+    "name": "AirBnb Seacliff",
+    "category": "stay",
+    "address": "10 Seacliff Road Apt 202/203, Seacliff, Cape Town, Western Cape 8005, South Africa",
+    "check_in": "14:00",
+    "check_out": "10:00",
+    "website": "https://www.airbnb.co.uk/rooms/1153692229287647356",
+    "image": "/images/AirBnbSeacliff.jpg"
+  },
+  "cape-town-group": {
+    "name": "Cape Town Group",
+    "category": "transfer",
+    "address": "51 Porterfield Road, Table View, Blouberg, Cape Town, South Africa",
+    "phone_south_africa": "0861 77 88 78",
+    "phone_international": "+27 21 556 5606",
+    "email": "info@capetowngroup.co.za"
+  },
+  "airbnb-franschhoek": {
+    "name": "AirBnb Franschhoek",
+    "category": "stay",
+    "address": "3 Pierre Jourdan Street, Franschhoek, Western Cape 7690, South Africa",
+    "check_in": "15:00",
+    "check_out": "10:00",
+    "website": "https://www.airbnb.co.uk/rooms/1298549642096662158",
+    "image": "/images/AirBnbFranschhoek.jpg"
+  },
+  "airbnb-blue-views": {
+    "name": "AirBnb Blue Views Terrace",
+    "category": "stay",
+    "address": "1A Victoria Road, Cape Town, Western Cape 8005, South Africa",
+    "check_in": "14:00",
+    "check_out": "10:00",
+    "website": "https://www.airbnb.co.uk/rooms/1683443935148090482",
+    "image": "/images/AirBnbBlueViewsTerrace.jpg" 
+  }
+}

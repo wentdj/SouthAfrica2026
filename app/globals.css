@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root { --ochre: #C86D3B; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #000; font-family: Arial, Helvetica, sans-serif; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+.eyebrow { color: #a55129; font-size: .6875rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.nav-button { display: flex; min-height: 48px; width: 100%; align-items: center; gap: 12px; border-radius: 14px; border: 0; background: transparent; padding: 0 14px; color: rgb(255 255 255 / .7); font-size: .9375rem; font-weight: 650; text-align: left; transition: .18s ease; }
+.nav-button:hover { background: rgb(255 255 255 / .1); color: #fff; }
+.nav-button-active { background: rgb(200 109 59 / .2); color: #ffbf9d; }
+.mobile-nav { display: flex; min-height: 48px; flex: 1; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border: 0; background: transparent; color: rgb(255 255 255 / .55); font-size: .625rem; font-weight: 700; }
+.mobile-nav-active { color: #ffbf9d; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }

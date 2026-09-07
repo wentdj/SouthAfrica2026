@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-The itinerary is read from `safari_itinerary.json` at build time. Update that file, then rebuild or redeploy to publish changes.
+The itinerary is read from `config/safari_itinerary.json` at build time. Update that file, then rebuild or redeploy to publish changes.
 
 ## GitHub Pages
 

@@ -1,5 +1,5 @@
-import itinerary from "../safari_itinerary.json";
-import contacts from "../contacts.json";
+import itinerary from "../config/safari_itinerary.json";
+import contacts from "../config/contacts.json";
 import { ItineraryApp } from "../components/itinerary-app";
 
 const contactFieldLabels: Record<string, string> = {

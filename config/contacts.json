@@ -70,13 +70,31 @@
     "website": "https://www.airbnb.co.uk/rooms/1298549642096662158",
     "image": "/images/AirBnbFranschhoek.jpg"
   },
-  "airbnb-blue-views": {
+"airbnb-blue-views": {
     "name": "AirBnb Blue Views Terrace",
     "category": "stay",
     "address": "1A Victoria Road, Cape Town, Western Cape 8005, South Africa",
     "check_in": "14:00",
     "check_out": "10:00",
     "website": "https://www.airbnb.co.uk/rooms/1683443935148090482",
-    "image": "/images/AirBnbBlueViewsTerrace.jpg" 
+    "image": "/images/AirBnbBlueViewsTerrace.jpg"
+  },
+  "lapetitecolombe": {
+    "name": "La Petite Colombe",
+    "category": "restaurant",
+    "address": "Leeu Estates, Franschhoek, South Africa",
+    "phone": "+27 21 202 3395",
+    "email": "reservations@lapetitecolombe.com",
+    "website": "https://www.lacolombe.restaurant/la-petite-colombe",
+    "image": "/images/la-petite-colombe.jpg"
+  },
+  "the-silo-hotel": {
+    "name": "The Silo Hotel - The Rooftop",
+    "category": "restaurant",
+    "address": "The Silo Hotel, V&A Waterfront, Cape Town, South Africa",
+    "phone": "+27 21 670 0511",
+    "email": "dining@thesilohotel.com",
+    "website": "https://www.theroyalportfolio.com/the-silo/dining/",
+    "image": "/images/TheSilo.jpg"
   }
 }

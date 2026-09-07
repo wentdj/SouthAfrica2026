@@ -135,8 +135,17 @@
   {
     "Day": "Mon",
     "Date": "28th Sept",
-    "Category": "Jenny",
-    "Details": "No Idea!, Come on Jenny"
+    "Category": "Day Trip",
+    "Details": "Table Top Mountain (weather dependant)\nLunch at Time Out Market\nV&A Waterfront"
+  },
+  {
+    "Day": "Mon",
+    "Date": "28th Sept",
+    "Category": "other",
+    "Description": "Sunset Cocktails",
+    "contactId": "the-silo-hotel",
+    "Details": "The Rooftop at The Silo Hotel - Sunset Cocktails\n5 people\nTime: 17:30\nReference: CC3978800",
+    "links": "https://www.theroyalportfolio.com/the-silo/dining/"
   },
   {
     "Day": "Tue",
@@ -155,10 +164,19 @@
     "Details": "Address - 3 Pierre Jourdan Street, Franschhoek, Western Cape 7690\n\nCheck In: 15:00\nCheck out: 10:00"
   },
   {
+    "Day": "Tue",
+    "Date": "29th Sept",
+    "Category": "other",
+    "Description": "Restaurant Booking",
+    "contactId": "lapetitecolombe",
+    "Details": "La Petite Colombe - Dinner for 5 people\nMixed menu (standard and vegetarian options)\nTime: To Be confirmed",
+    "links": "https://www.lacolombe.restaurant/la-petite-colombe"
+  },
+  {
     "Day": "Wed",
     "Date": "30th Sept",
     "Category": "Day Trip",
-    "Details": "Tram Line - TBC"
+    "Details": "Pink Tram Line: 10:30 (Tickets Booked)"
   },
   {
     "Day": "Thu",

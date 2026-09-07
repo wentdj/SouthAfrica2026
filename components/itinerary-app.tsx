@@ -162,26 +162,33 @@ function EventCard({ entry, overImage = false, onContact }: { entry: ItineraryEn
 
 function renderContactLines(lines: string[]) {
   return lines.map((line, index) => {
-    const parts: React.ReactNode[] = [];
     const phoneRegex = /(?:\+?\d[\d\s()-]{6,}\d)/g;
-    let cursor = 0;
-    let match: RegExpExecArray | null;
-    let lastIndex = 0;
     const matches: { start: number; end: number; text: string }[] = [];
-    while ((match = phoneRegex.exec(line)) !== null) {
-      matches.push({ start: match.index, end: match.index + match[0].length, text: match[0] });
+    let m: RegExpExecArray | null;
+    while ((m = phoneRegex.exec(line)) !== null) {
+      matches.push({ start: m.index, end: m.index + m[0].length, text: m[0] });
     }
     if (matches.length === 0) {
       return <span key={index}>{line}{index < lines.length - 1 ? "\n" : ""}</span>;
     }
-    matches.forEach((m, i) => {
-      if (m.start > cursor) parts.push(line.slice(cursor, m.start));
-      const digits = m.text.replace(/[^0-9+]/g, "");
-      const normalized = digits.startsWith("00") ? "+" + digits.slice(2) : digits;
-      const waUrl = `https://wa.me/${normalized.replace("+", "")}`;
-      parts.push(<a key={`${index}-${i}`} href={waUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-[#C86D3B]">{m.text}</a>);
-      cursor = m.end;
-      lastIndex = i;
+    const parts: React.ReactNode[] = [];
+    let cursor = 0;
+    matches.forEach((match, i) => {
+      if (match.start > cursor) parts.push(line.slice(cursor, match.start));
+      const digitsOnly = match.text.replace(/[^0-9]/g, "");
+      const startsWithPlus = match.text.trim().startsWith("+");
+      const startsWithIntl = match.text.trim().startsWith("00");
+      const isInternational = startsWithPlus || startsWithIntl || digitsOnly.length >= 11;
+      if (isInternational) {
+        const normalized = startsWithIntl ? "+" + digitsOnly.slice(2) : (startsWithPlus ? "+" + digitsOnly : digitsOnly);
+        const waNumber = normalized.replace("+", "");
+        const waUrl = `https://wa.me/${waNumber}`;
+        parts.push(<a key={`${index}-${i}`} href={waUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-[#C86D3B]">{match.text}</a>);
+      } else {
+        const telUrl = `tel:${digitsOnly}`;
+        parts.push(<a key={`${index}-${i}`} href={telUrl} className="underline underline-offset-2 hover:text-[#C86D3B]">{match.text}</a>);
+      }
+      cursor = match.end;
     });
     if (cursor < line.length) parts.push(line.slice(cursor));
     return <span key={index}>{parts}{index < lines.length - 1 ? "\n" : ""}</span>;

@@ -14,6 +14,7 @@ const contactFieldLabels: Record<string, string> = {
   email_wildcard: "Email",
   contact_person: "Contact",
   fax: "Fax",
+  notes: "Airport Shuttle",
 };
 
 function contactLines(contact: Record<string, string>) {

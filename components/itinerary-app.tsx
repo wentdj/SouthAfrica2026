@@ -160,6 +160,34 @@ function EventCard({ entry, overImage = false, onContact }: { entry: ItineraryEn
   );
 }
 
+function renderContactLines(lines: string[]) {
+  return lines.map((line, index) => {
+    const parts: React.ReactNode[] = [];
+    const phoneRegex = /(?:\+?\d[\d\s()-]{6,}\d)/g;
+    let cursor = 0;
+    let match: RegExpExecArray | null;
+    let lastIndex = 0;
+    const matches: { start: number; end: number; text: string }[] = [];
+    while ((match = phoneRegex.exec(line)) !== null) {
+      matches.push({ start: match.index, end: match.index + match[0].length, text: match[0] });
+    }
+    if (matches.length === 0) {
+      return <span key={index}>{line}{index < lines.length - 1 ? "\n" : ""}</span>;
+    }
+    matches.forEach((m, i) => {
+      if (m.start > cursor) parts.push(line.slice(cursor, m.start));
+      const digits = m.text.replace(/[^0-9+]/g, "");
+      const normalized = digits.startsWith("00") ? "+" + digits.slice(2) : digits;
+      const waUrl = `https://wa.me/${normalized.replace("+", "")}`;
+      parts.push(<a key={`${index}-${i}`} href={waUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-[#C86D3B]">{m.text}</a>);
+      cursor = m.end;
+      lastIndex = i;
+    });
+    if (cursor < line.length) parts.push(line.slice(cursor));
+    return <span key={index}>{parts}{index < lines.length - 1 ? "\n" : ""}</span>;
+  });
+}
+
 function ContactsPanel({ contacts, selectedContactId, onClearSelection }: { contacts: Contact[]; selectedContactId?: string; onClearSelection: () => void }) {
   return <section className="mx-auto max-w-2xl px-4 pb-28 pt-6 sm:px-8 lg:pb-10">
     <section aria-labelledby="contacts-heading">
@@ -168,7 +196,7 @@ function ContactsPanel({ contacts, selectedContactId, onClearSelection }: { cont
         {contacts.filter((contact) => !selectedContactId || contact.id === selectedContactId).map((contact, index) => {
           const Icon = eventIcon(contact.category);
           return <article key={`${contact.name}-${index}`} className="rounded-3xl border border-white/15 bg-white/5 p-5 shadow-[0_8px_30px_rgb(0,0,0,0.20)] backdrop-blur-sm">
-            <div className="flex items-start gap-4"><span className="grid size-10 shrink-0 place-items-center rounded-2xl bg-[#C86D3B]/20 text-orange-200"><Icon size={19} /></span><div className="min-w-0 flex-1"><p className="text-[11px] font-bold uppercase tracking-[0.14em] text-white/55">{contact.category || "Provider"}</p><h3 className="mt-1 font-semibold text-white">{contact.name}</h3>{contact.lines.length > 0 && <p className="mt-3 whitespace-pre-line text-sm leading-6 text-white/80">{contact.lines.join("\n")}</p>}{contact.urls.length > 0 && <div className="mt-4 flex flex-wrap gap-2">{contact.urls.map((url, index) => <a key={`${url}-${index}`} href={url} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-white/10 px-3 text-xs font-bold text-white transition hover:bg-[#C86D3B] hover:text-white"><ExternalLink size={14} /> Website</a>)}</div>}</div></div>
+            <div className="flex items-start gap-4"><span className="grid size-10 shrink-0 place-items-center rounded-2xl bg-[#C86D3B]/20 text-orange-200"><Icon size={19} /></span><div className="min-w-0 flex-1"><p className="text-[11px] font-bold uppercase tracking-[0.14em] text-white/55">{contact.category || "Provider"}</p><h3 className="mt-1 font-semibold text-white">{contact.name}</h3>{contact.lines.length > 0 && <p className="mt-3 whitespace-pre-line text-sm leading-6 text-white/80">{renderContactLines(contact.lines)}</p>}{contact.urls.length > 0 && <div className="mt-4 flex flex-wrap gap-2">{contact.urls.map((url, index) => <a key={`${url}-${index}`} href={url} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-white/10 px-3 text-xs font-bold text-white transition hover:bg-[#C86D3B] hover:text-white"><ExternalLink size={14} /> Website</a>)}</div>}</div></div>
             {contact.image && <div className="relative mt-5 aspect-[16/9] overflow-hidden rounded-2xl"><Image src={publicImage(contact.image)} alt={`${contact.name} location`} fill sizes="(max-width: 640px) 100vw, 560px" className="object-cover" /></div>}
           </article>;
         })}

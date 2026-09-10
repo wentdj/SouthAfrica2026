@@ -4,7 +4,7 @@
     "Date": "18th Sept",
     "Category": "Flight",
     "Description": "London → Johannesburg (Virgin)",
-    "Details": "10:15 PM Heathrow Airport (LHR)\nTravel time: 11 hrOvernight\n10:15 AM+1O.R. Tambo International Airport (JNB)\n\nFlight: VS449"
+    "comment": "10:15 PM Heathrow Airport (LHR)\nTravel time: 11 hrOvernight\n10:15 AM+1O.R. Tambo International Airport (JNB)\n\nFlight: VS449"
   },
   {
     "Day": "Sat",
@@ -12,15 +12,15 @@
     "Category": "Accomodation",
     "Description": "Sunrock Guesthouse",
     "contactId": "sunrock-guesthouse",
-    "Details": "Accomodation to collect and drop off from Airport\nArrival time:  11:00 - 12:00\n\nAddress:  11 Park Street, 1619 Kempton Park, South Africa\nContact: +27 76 666 0274",
-    "links": "https://www.tripadvisor.co.uk/Hotel_Review-g312579-d1563519-Reviews-Sunrock_Guesthouse-Kempton_Park_Ekurhuleni_Greater_Johannesburg_Gauteng.html"
+    "links": "https://www.tripadvisor.co.uk/Hotel_Review-g312579-d1563519-Reviews-Sunrock_Guesthouse-Kempton_Park_Ekurhuleni_Greater_Johannesburg_Gauteng.html",
+    "comment": "Arrival time:  11:00 - 12:00\n\nAfter collecting luggage, call or WhatsApp Manager on duty, Driver Tony or Landline\n\nPick-up point: Bus terminal just opposite the International Arrivals Hall, behind the Intercontinental Hotel. Wait in the outside section of the bus terminal.\n\nVehicles have a Sunrock Guesthouse sticker. Shuttle back to airport can be confirmed with reception on arrival.\n\nAirport WIFI is free (no password needed)."
   },
   {
     "Day": "Sun",
     "Date": "20th Sept",
     "Category": "Flight",
     "Description": "JNB → Skukuza (Airlink)",
-    "Details": "10:05 AMO.R. Tambo International Airport (JNB)\nTravel time: 1 hr\n11:05 AMSkukuza Airport (SZK)\nFlight: 4Z861 \nContact: email 4Zschedulechange@flyairlink.com / phone +27 11 451 7300 (option 1)"
+    "comment": "10:05 AMO.R. Tambo International Airport (JNB)\nTravel time: 1 hr\n11:05 AMSkukuza Airport (SZK)\nFlight: 4Z861 \nContact: email 4Zschedulechange@flyairlink.com / phone +27 11 451 7300 (option 1)"
   },
   {
     "Day": "Sun",
@@ -28,15 +28,14 @@
     "Category": "Car Hire",
     "Description": "Car Hire",
     "contactId": "avis-budget",
-    "Details": "Mercedes-Benz Vito \nPICK UP LOCATION : Skukuza Airport at 1350\nOPENING HOURS \n10:00-15:00 \n\nTELEPHONE NO \n27 13 735 5343 \n\nJoy Matlala\nReservations Call Centre Agent\nTel:  +27 86 102 1111   | Direct: +27 11 387 8431  \nE-mail : Joy.matlala@avisbudget.co.za"
+    "comment": "Mercedes-Benz Vito \nPICK UP LOCATION : Skukuza Airport at 1350\nOPENING HOURS \n10:00-15:00"
   },
   {
     "Day": "Sun",
     "Date": "20th Sept",
     "Category": "Drive",
-    "Description": "Lower Sabie Rest Camp",
-    "contactId": "lower-sabie-rest-camp",
-    "Details": "SZK → Lower Sabie: ~1 hr 30 min drive"
+    "Description": "Skukuza → Lower Sabie Rest Camp",
+    "comment": "SZK → Lower Sabie: ~1 hr 30 min drive"
   },
   {
     "Day": "Sun",
@@ -44,8 +43,8 @@
     "Category": "Accomodation",
     "Description": "Lower Sabie Rest Camp",
     "contactId": "lower-sabie-rest-camp",
-    "Details": "Lower Sabie, Kruger National Park, Sabie, 4184. \n3 x BD2U (BUNGALOW)\n\nTel: (012) 428-9111 Fax: (012) 343-0905 Email: reservations@sanparks.org Website: www.sanparks.org\nEmail: wildcard@sanparks.org Website: www.wildcard.co.za",
-    "links": "LOWER SABIE Rest Camp Review | Kruger National Park Accommodation #1"
+    "links": "LOWER SABIE Rest Camp Review | Kruger National Park Accommodation #1",
+    "comment": "3 x BD2U (BUNGALOW)"
   },
   {
     "Day": "Mon",
@@ -57,10 +56,10 @@
     "Day": "Tues",
     "Date": "22nd Sept",
     "Category": "Drive",
-    "Description": "Jacana River Lodge",
+    "Description": "Lower Sabie → Jacana River Lodge",
     "contactId": "jacana-river-lodge",
-    "Details": "Lower Sabie → Jacana: ~2.5–3 hrs drive",
-    "links": "https://jacanariverlodge.com/"
+    "links": "https://jacanariverlodge.com/",
+    "comment": "Lower Sabie → Jacana: ~2.5–3 hrs drive"
   },
   {
     "Day": "Tues",
@@ -68,75 +67,78 @@
     "Category": "Accomodation",
     "Description": "Jacana River Lodge",
     "contactId": "jacana-river-lodge",
-    "Details": "Mjejane Game Reserve | WhatsApp Enquiry+27 66 293 7100info@jacanariverlodge.com\nAddress:RIVER ROAD, Erf 3 Portion 30 Mjejane Game Reserve, 3960 Hectorspruit, South Africa"
+    "comment": "Items Provided:\n• Toilet paper\n• Bath towels\n• Swimming pool towels\n• Wood for the braai/fire\n• Ice — we have our own ice machine\n• Bathroom amenities, including shower gel and hand lotion\n\nMjejane Conservation & Entrance Fees:\n• R350 per vehicle – valid for a 7-day cycle\n• R60 per guest, per night"
   },
   {
     "Day": "Wed",
     "Date": "23rd Sept",
     "Category": "Driving Safari",
-    "Details": "PM Safari: 15:30"
+    "comment": "PM Safari: 15:30"
   },
   {
     "Day": "Thur",
     "Date": "24th Sept",
     "Category": "Walking Safari",
-    "Details": "Pick up 05:20\n\nNo white or bright clothing. \nRemember cameras, binoculars, extra water and something to eat. \nHats and sunblock. Closed shoes \n\nWe do provide a light snack\n\nhttps://irvingknightsafaris.co.za/\n+27 71 485 5721\n\nBooked via:\nMjejane River Lodge\n+27 72 529 1039"
+    "contactId": "irving-knight-safaris",
+    "comment": "Pick up 05:20\n\nNo white or bright clothing. \nRemember cameras, binoculars, extra water and something to eat. \nHats and sunblock. Closed shoes \n\nWe do provide a light snack"
   },
   {
     "Day": "Fri",
     "Date": "25th Sept",
     "Category": "Driving Safari",
-    "Details": "Morning Safari: 06:00"
+    "comment": "Morning Safari: 06:00"
   },
   {
     "Day": "Sat",
     "Date": "26th Sept",
     "Category": "Drive",
-    "Description": "MQP Airport",
-    "Details": "Jacana → MQP Airport: 2 hrs"
+    "Description": "Jacana River Lodge → MQP Airport",
+    "comment": "Approx ~ 2 hrs"
   },
   {
     "Day": "Sat",
     "Date": "26th Sept",
     "Category": "Car Hire",
+    "contactId": "avis-budget",
     "Description": "Drop Off",
-    "Details": "Kruger Mpumalanga International Airport\nKruger Mpumalanga Airport\nInternational Airport\n1200 "
+    "comment": "Kruger Mpumalanga International Airport\nKruger Mpumalanga Airport\nInternational Airport\n1200 "
   },
   {
     "Day": "Sat",
     "Date": "26th Sept",
     "Category": "Flight",
     "Description": "MQP → Cape Town (Airlink)",
-    "Details": "13:30  PMKruger Mpumalanga International Airport (MQP)\nTravel time: 2 hr 40 min\n16:05  PMCape Town International Airport (CPT)\n\nFlight: 4Z664 "
+    "comment": "13:30  PMKruger Mpumalanga International Airport (MQP)\nTravel time: 2 hr 40 min\n16:05  PMCape Town International Airport (CPT)\n\nFlight: 4Z664 "
   },
   {
     "Day": "Sat",
     "Date": "26th Sept",
     "Category": "Transfer",
-    "Description": "CTIA– BANTRY BAY, 5 pax, Matt Davies, R 640.00 Date: 26 September 2026 Time: 16h05",
+    "Description": "Cape Town → Seacliff Road",
     "contactId": "bantry-bay-transfer",
-    "links": "https://example-bantry-bay.co.za"
+    "links": "https://example-bantry-bay.co.za",
+    "comment": "CTIA– BANTRY BAY, 5 pax, Matt Davies, R 640.00 Date: 26 September 2026 Time: 16h05"
   },
   {
     "Day": "Sat",
     "Date": "26th Sept",
     "Category": "Accomodation",
-    "Description": "AirBnb",
+    "Description": "AirBnb (Seacliff)",
     "contactId": "airbnb-seacliff",
-    "Details": "address - 10 Seacliff Road Apt 202/203 Seacliff, Cape Town, Western Cape 8005, South Africa\nCheck In: 14:00\nCheck out: 10:00",
-    "links": "https://www.airbnb.co.uk/rooms/1153692229287647356"
+    "links": "https://www.airbnb.co.uk/rooms/1153692229287647356",
+    "comment": "Check In: 14:00\nCheck out: 10:00"
   },
   {
     "Day": "Sun",
     "Date": "27th Sept",
     "Category": "Day Trip",
-    "Details": "-Scenic drive through Muizenberg\n-Stop in Kalk Bay to explore the harbour, cafés and boutique shops\n-Continue to Simon's Town\n-Visit Boulders Beach to see the famous African Penguin Colony (entry fees excluded)\n-Enjoy lunch in Simon's Town (own account)\n-Visit the Cape of Good Hope Nature Reserve, including Cape Point and the Cape of Good Hope (entrance fees and Flying Dutchman Funicular excluded)\n-Travel along the spectacular Chapman's Peak Drive\n-Drive through Hout Bay\n-Sunset drinks in Camps Bay (own account)\n\n10-hour Cape Peninsula tour, 5 pax, Matt Davies, R4150.00\nDate: 27 September 2026 · 09h00–19h00\n(10 hours booked, up to 250 km)"
+    "comment": "-Scenic drive through Muizenberg\n-Stop in Kalk Bay to explore the harbour, cafés and boutique shops\n-Continue to Simon's Town\n-Visit Boulders Beach to see the famous African Penguin Colony (entry fees excluded)\n-Enjoy lunch in Simon's Town (own account)\n-Visit the Cape of Good Hope Nature Reserve, including Cape Point and the Cape of Good Hope (entrance fees and Flying Dutchman Funicular excluded)\n-Travel along the spectacular Chapman's Peak Drive\n-Drive through Hout Bay\n-Sunset drinks in Camps Bay (own account)\n\n10-hour Cape Peninsula tour, 5 pax, Matt Davies, R4150.00\nDate: 27 September 2026 · 09h00–19h00\n(10 hours booked, up to 250 km)"
   },
   {
     "Day": "Mon",
     "Date": "28th Sept",
     "Category": "Day Trip",
-    "Details": "Table Top Mountain (weather dependant)\nLunch at Time Out Market\nV&A Waterfront"
+    "comment": "Table Top Mountain (weather dependant)\nLunch at Time Out Market\nV&A Waterfront"
   },
   {
     "Day": "Mon",
@@ -144,8 +146,8 @@
     "Category": "other",
     "Description": "Sunset Cocktails",
     "contactId": "the-silo-hotel",
-    "Details": "The Rooftop at The Silo Hotel - Sunset Cocktails\n5 people\nTime: 17:30\nReference: CC3978800",
-    "links": "https://www.theroyalportfolio.com/the-silo/dining/"
+    "links": "https://www.theroyalportfolio.com/the-silo/dining/",
+    "comment": "The Rooftop at The Silo Hotel - Sunset Cocktails\n5 people\nTime: 17:30\nReference: CC3978800"
   },
   {
     "Day": "Mon",
@@ -153,23 +155,24 @@
     "Category": "other",
     "Description": "Restaurant Booking",
     "contactId": "the-woodlands-eatery",
-    "Details": "The Woodlands Eatery - Dinner for 5 people\nTime: 19:30\nSeating preference: Downstairs\n\nContact: +27 63 710 4742"
+    "comment": "The Woodlands Eatery - Dinner for 5 people\nTime: 19:30\nSeating preference: Downstairs"
   },
   {
     "Day": "Tue",
     "Date": "29th Sept",
     "Category": "Transfer",
-    "Details": "BANTRY BAY–FRANSCHHOEK,5pax, Matt Davies, R 1590.00 Date: 29 September 2026 Time: 10h00\n\n Cape Town GroupAddress: 51 Porterfield Road, Table View, Blouberg, Cape Town, South AfricaPhone (South Africa): 0861 77 88 78Phone (International): +27 21 556 5606Email: info@capetowngroup.co.za",
+    "Description": "Seacliff Road → Franschhoek",
     "contactId": "cape-town-group",
-    "links": "https://www.capetowngroup.co.za"
+    "links": "https://www.capetowngroup.co.za",
+    "comment": "BANTRY BAY–FRANSCHHOEK\nDate: 29 September 2026 \nTime: 10h00"
   },
   {
     "Day": "Tue",
     "Date": "29th Sept",
     "Category": "Accomodation",
-    "Description": "AirBnb",
+    "Description": "AirBnb (Franschhoek)",
     "contactId": "airbnb-franschhoek",
-    "Details": "Address - 3 Pierre Jourdan Street, Franschhoek, Western Cape 7690\n\nCheck In: 15:00\nCheck out: 10:00"
+    "comment": "Check In: 15:00\nCheck out: 10:00\n\nNeed to contact Frank on the morning of 29 September to check whether an earlier arrival/luggage drop will be possible.  Check AirBnB app for No day before"
   },
   {
     "Day": "Tue",
@@ -177,51 +180,51 @@
     "Category": "other",
     "Description": "Restaurant Booking",
     "contactId": "lapetitecolombe",
-    "Details": "La Petite Colombe - Dinner for 5 people\nMixed menu (standard and vegetarian options)\nTime: 19:00",
-    "links": "https://www.lacolombe.restaurant/la-petite-colombe"
+    "links": "https://www.lacolombe.restaurant/la-petite-colombe",
+    "comment": "La Petite Colombe - Dinner for 5 people\nMixed menu (standard and vegetarian options)\nTime: 19:00"
   },
   {
     "Day": "Wed",
     "Date": "30th Sept",
     "Category": "Day Trip",
-    "Details": "Pink Tram Line: 10:30 (Tickets Booked)"
+    "comment": "Pink Tram Line: 10:30 (Tickets Booked)"
   },
   {
     "Day": "Thu",
     "Date": "1st Oct",
     "Category": "Day Trip",
-    "Details": "babylonstoren and Chill"
+    "comment": "babylonstoren and Chill"
   },
   {
     "Day": "Fri",
     "Date": "2nd Oct",
     "Category": "Transfer",
-    "Details": "FRANSCHHOEK–CAMPSBAY,5pax, Matt Davies, R 1590.00 Date: 02 October 2026 Time: 10h00",
     "contactId": "cape-town-group",
-    "links": "https://www.capetowngroup.co.za"
+    "links": "https://www.capetowngroup.co.za",
+    "comment": "FRANSCHHOEK–CAMPSBAY,5pax\nDate: 02 October 2026\nTime: 10h00"
   },
   {
     "Day": "Fri",
     "Date": "2nd Oct",
     "Category": "Accomodation",
-    "Description": "AirBnb",
+    "Description": "AirBnb Blue Views Terrace (Camps Bay)",
     "contactId": "airbnb-blue-views",
-    "Details": "Address: Blue Views Terrace, 1A Victoria Road, Cape Town, Western Cape 8005\n\nCheck In: 14:00\nCheck out: 10:00"
+    "comment": "Check In: 14:00\nCheck out: 10:00\n\nConfirmed we can drop bags early. Housekeeping will assist."
   },
   {
     "Day": "Sat",
     "Date": "3rd Oct",
     "Category": "Transfer",
-    "Details": "FRANSCHHOEK–CAMPSBAY,5pax, Matt Davies, R 1590.00 Date: 02 October 2026 Time: 10h00",
     "contactId": "cape-town-group",
-    "links": "https://www.capetowngroup.co.za"
+    "links": "https://www.capetowngroup.co.za",
+    "comment": "FRANSCHHOEK–CAMPSBAY,5pax\nDate: 02 October 2026\nTime: 10h00"
   },
   {
     "Day": "Sat",
     "Date": "3rd Oct",
     "Category": "Flight",
     "Description": "Cape Town → JNB",
-    "Details": "14:00  PM Cape Town International Airport (CPT)\nTravel time: 2 hr 5 min\n16:05 PM O.R. Tambo International Airport (JNB)\n\nflight: 4Z928 "
+    "comment": "14:00  PM Cape Town International Airport (CPT)\nTravel time: 2 hr 5 min\n16:05 PM O.R. Tambo International Airport (JNB)\n\nflight: 4Z928 "
   },
   {
     "Day": "Sat",
@@ -229,14 +232,14 @@
     "Category": "Accomodation",
     "Description": "Sunrock Guesthouse",
     "contactId": "sunrock-guesthouse",
-    "Details": "Arrival time:   18:00 - 19:00\nAddress:11 Park Street, 1619 Kempton Park, South Africa\nContact: +27 76 666 0274",
-    "links": "https://www.tripadvisor.co.uk/Hotel_Review-g312579-d1563519-Reviews-Sunrock_Guesthouse-Kempton_Park_Ekurhuleni_Greater_Johannesburg_Gauteng.html"
+    "links": "https://www.tripadvisor.co.uk/Hotel_Review-g312579-d1563519-Reviews-Sunrock_Guesthouse-Kempton_Park_Ekurhuleni_Greater_Johannesburg_Gauteng.html",
+    "comment": "Arrival time:   18:00 - 19:00\nAddress:11 Park Street, 1619 Kempton Park, South Africa\nContact: +27 76 666 0274"
   },
   {
     "Day": "Sun",
     "Date": "4th Oct",
     "Category": "Flight",
     "Description": "JNB → London (Virgin)",
-    "Details": "8:15 PMO.R. Tambo International Airport (JNB)\nTravel time: 11 hr 5 minOvernight\n6:20 AM+1Heathrow Airport (LHR)\n\nFlight: VS450"
+    "comment": "8:15 PMO.R. Tambo International Airport (JNB)\nTravel time: 11 hr 5 minOvernight\n6:20 AM+1Heathrow Airport (LHR)\n\nFlight: VS450"
   }
 ]

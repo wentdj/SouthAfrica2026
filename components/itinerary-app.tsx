@@ -13,7 +13,7 @@ export type ItineraryEntry = {
   Date: string;
   Category?: string;
   Description?: string;
-  Details?: string;
+  comment?: string;
   Links?: string;
   links?: string;
   contactId?: string;
@@ -91,15 +91,22 @@ function extractAddressLine(value?: string) {
 
 const contactLinePattern = /\b(address|contact|telephone|tel\b|phone|e-?mail|website|whatsapp|reservations|opening hours|fax)\b/i;
 const phoneOnlyPattern = /(?:^|\s)\+?\d[\d\s()-]{6,}\d(?:\s|$)/;
+// Match: "Address:" labels, geographic addresses with postal codes (like "City, Province, 1234."), and street names
+const addressPattern = /\b(address|location)\b|^\s*[^:]*(?:,\s*[^:]*)*\s+\d{4,5}\s*\.?\s*$|(?:street|st\b|road|rd\b|avenue|ave\b|drive|dr\b|lane|ln\b|boulevard|blvd|court|ct\b|place|pl\b|circle|terrace|way|close|alley)\b/i;
 
 function isContactLine(line: string) {
   return contactLinePattern.test(line) || phoneOnlyPattern.test(line) || extractUrls(line).length > 0;
 }
 
+function isAddressLine(line: string) {
+  return addressPattern.test(line);
+}
+
 function withoutContactDetails(value?: string) {
+  // Only remove address lines; keep everything else (contact details in comments are intentional)
   return value
     ?.split("\n")
-    .filter((line) => !isContactLine(line))
+    .filter((line) => !isAddressLine(line))
     .join("\n");
 }
 
@@ -137,10 +144,7 @@ function EventCard({ entry, overImage = false, onContact }: { entry: ItineraryEn
   const meta = categoryMeta[key];
   const Icon = eventIcon(entry.Category);
   const title = entry.Description || entry.Category || "Travel detail";
-  const isAccommodation = key === "stay";
-  const detail = isAccommodation
-    ? extractAddressLine(redactDetails(entry.Details))
-    : cleanText(withoutContactDetails(redactDetails(entry.Details)));
+  const detail = cleanText(redactDetails(entry.comment));
 
   return (
     <article className={`group rounded-3xl border p-5 shadow-[0_8px_30px_rgb(0,0,0,0.25)] transition duration-200 sm:p-6 sm:hover:-translate-y-0.5 sm:hover:shadow-[0_12px_32px_rgb(0,0,0,0.40)] ${overImage ? "border-white/35 bg-transparent" : "border-white/15 bg-stone-900"}`}>
@@ -203,7 +207,7 @@ function ContactsPanel({ contacts, selectedContactId, onClearSelection }: { cont
         {contacts.filter((contact) => !selectedContactId || contact.id === selectedContactId).map((contact, index) => {
           const Icon = eventIcon(contact.category);
           return <article key={`${contact.name}-${index}`} className="rounded-3xl border border-white/15 bg-white/5 p-5 shadow-[0_8px_30px_rgb(0,0,0,0.20)] backdrop-blur-sm">
-            <div className="flex items-start gap-4"><span className="grid size-10 shrink-0 place-items-center rounded-2xl bg-[#C86D3B]/20 text-orange-200"><Icon size={19} /></span><div className="min-w-0 flex-1"><p className="text-[11px] font-bold uppercase tracking-[0.14em] text-white/55">{contact.category || "Provider"}</p><h3 className="mt-1 font-semibold text-white">{contact.name}</h3>{contact.lines.length > 0 && <p className="mt-3 whitespace-pre-line text-sm leading-6 text-white/80">{renderContactLines(contact.lines)}</p>}{contact.urls.length > 0 && <div className="mt-4 flex flex-wrap gap-2">{contact.urls.map((url, index) => <a key={`${url}-${index}`} href={url} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-white/10 px-3 text-xs font-bold text-white transition hover:bg-[#C86D3B] hover:text-white"><ExternalLink size={14} /> Website</a>)}</div>}</div></div>
+            <div className="flex items-start gap-4"><span className="grid size-10 shrink-0 place-items-center rounded-2xl bg-[#C86D3B]/20 text-orange-200"><Icon size={19} /></span><div className="min-w-0 flex-1"><h3 className="mt-1 font-semibold text-white">{contact.name}</h3>{contact.lines.length > 0 && <p className="mt-3 whitespace-pre-line text-sm leading-6 text-white/80">{renderContactLines(contact.lines)}</p>}{contact.urls.length > 0 && <div className="mt-4 flex flex-wrap gap-2">{contact.urls.map((url, index) => <a key={`${url}-${index}`} href={url} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-white/10 px-3 text-xs font-bold text-white transition hover:bg-[#C86D3B] hover:text-white"><ExternalLink size={14} /> Website</a>)}</div>}</div></div>
             {contact.image && <div className="relative mt-5 aspect-[16/9] overflow-hidden rounded-2xl"><Image src={publicImage(contact.image)} alt={`${contact.name} location`} fill sizes="(max-width: 640px) 100vw, 560px" className="object-cover" /></div>}
           </article>;
         })}
@@ -231,7 +235,7 @@ function SimpleItineraryTable({ entries }: { entries: ItineraryEntry[] }) {
         <tbody>
           {entries.map((entry, index) => {
             const title = entry.Description || entry.Category || "Travel detail";
-            const details = redactDetails(entry.Details);
+            const details = cleanText(redactDetails(entry.comment));
             const rowKey = `${entry.Date}-${index}`;
             return <tr key={rowKey} className="border-b border-white/5 align-top last:border-b-0 transition hover:bg-white/5">
               <td className="whitespace-nowrap px-4 py-3 font-semibold text-white sm:px-6">{entry.Date}</td>
@@ -269,7 +273,7 @@ export function ItineraryApp({ entries, contacts }: { entries: ItineraryEntry[];
   const [view, setView] = useState<NavView>("itinerary");
   const [selectedContactId, setSelectedContactId] = useState<string>();
   const [query, setQuery] = useState("");
-  const visibleEntries = useMemo(() => entries.filter((entry) => (activeFilter === "all" || categoryOf(entry.Category) === activeFilter) && `${entry.Description} ${entry.Details} ${entry.Category}`.toLowerCase().includes(query.toLowerCase())), [entries, activeFilter, query]);
+  const visibleEntries = useMemo(() => entries.filter((entry) => (activeFilter === "all" || categoryOf(entry.Category) === activeFilter) && `${entry.Description} ${entry.comment} ${entry.Category}`.toLowerCase().includes(query.toLowerCase())), [entries, activeFilter, query]);
   const stageGroups = useMemo(() => stages.map((stage) => {
     const stageEntries = visibleEntries.filter((entry) => stageForDate(entry.Date).id === stage.id);
     const days = Object.values(stageEntries.reduce<Record<string, ItineraryEntry[]>>((result, entry) => { const key = dateKey(entry); (result[key] ??= []).push(entry); return result; }, {}));

@@ -1,0 +1,122 @@
+{
+  "fields": {
+    "address": {
+      "label": "Address",
+      "displayOn": ["contacts"]
+    },
+    "phone": {
+      "label": "Phone",
+      "displayOn": ["contacts"]
+    },
+    "direct_phone": {
+      "label": "Direct phone",
+      "displayOn": ["contacts"]
+    },
+    "phone_whatsapp": {
+      "label": "WhatsApp",
+      "displayOn": ["contacts"]
+    },
+    "phone_south_africa": {
+      "label": "Phone (South Africa)",
+      "displayOn": ["contacts"]
+    },
+    "phone_international": {
+      "label": "Phone (International)",
+      "displayOn": ["contacts"]
+    },
+    "manager_phone": {
+      "label": "Manager on duty",
+      "displayOn": ["contacts"]
+    },
+    "driver_phone": {
+      "label": "Driver Tony",
+      "displayOn": ["contacts"]
+    },
+    "landline_phone": {
+      "label": "Landline",
+      "displayOn": ["contacts"]
+    },
+    "email": {
+      "label": "Email",
+      "displayOn": ["contacts"]
+    },
+    "email_reservations": {
+      "label": "Reservations email",
+      "displayOn": ["contacts"]
+    },
+    "email_wildcard": {
+      "label": "Email",
+      "displayOn": ["contacts"]
+    },
+    "contact_person": {
+      "label": "Contact",
+      "displayOn": ["contacts"]
+    },
+    "fax": {
+      "label": "Fax",
+      "displayOn": ["contacts"]
+    },
+    "comment": {
+      "label": "Additional Information",
+      "displayOn": ["contacts"],
+      "multiline": true
+    },
+    "check_in": {
+      "label": "Check-in",
+      "displayOn": ["contacts"]
+    },
+    "check_out": {
+      "label": "Check-out",
+      "displayOn": ["contacts"]
+    },
+    "website": {
+      "label": "Website",
+      "displayOn": ["contacts"],
+      "type": "url"
+    },
+    "image": {
+      "label": "Image",
+      "displayOn": ["contacts"],
+      "type": "image"
+    },
+    "category": {
+      "label": "Category",
+      "displayOn": [],
+      "system": true
+    },
+    "name": {
+      "label": "Name",
+      "displayOn": ["contacts"],
+      "system": true
+    }
+  },
+  "pageConfigs": {
+    "itinerary": {
+      "showContactButton": true,
+      "filterContactInfo": true,
+      "displayFields": []
+    },
+    "contacts": {
+      "displayFields": [
+        "name",
+        "address",
+        "phone",
+        "direct_phone",
+        "phone_whatsapp",
+        "phone_south_africa",
+        "phone_international",
+        "email",
+        "email_reservations",
+        "email_wildcard",
+        "contact_person",
+        "fax",
+        "check_in",
+        "check_out",
+        "comment",
+        "website",
+        "image"
+      ]
+    }
+  }
+}
+

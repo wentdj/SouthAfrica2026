@@ -1,25 +1,23 @@
 import itinerary from "../config/safari_itinerary.json";
 import contacts from "../config/contacts.json";
+import fieldConfig from "../config/field-config.json";
 import { ItineraryApp } from "../components/itinerary-app";
 
-const contactFieldLabels: Record<string, string> = {
-  address: "Address",
-  phone: "Phone",
-  direct_phone: "Direct phone",
-  phone_whatsapp: "WhatsApp",
-  phone_south_africa: "Phone (South Africa)",
-  phone_international: "Phone (International)",
-  email: "Email",
-  email_reservations: "Reservations email",
-  email_wildcard: "Email",
-  contact_person: "Contact",
-  fax: "Fax",
-  notes: "Airport Shuttle",
-};
+function getContactFieldLabels() {
+  const labels: Record<string, string> = {};
+  Object.entries(fieldConfig.fields).forEach(([key, field]) => {
+    if ((field.displayOn as string[]).includes("contacts")) {
+      labels[key] = field.label;
+    }
+  });
+  return labels;
+}
+
+const contactFieldLabels = getContactFieldLabels();
 
 function contactLines(contact: Record<string, string>) {
   return Object.entries(contact ?? {})
-    .filter(([key, value]) => contactFieldLabels[key] && value)
+    .filter(([key, value]) => contactFieldLabels[key] && value && key !== "website" && key !== "image")
     .map(([key, value]) => `${contactFieldLabels[key]}: ${value}`);
 }
 
@@ -40,7 +38,7 @@ export default function Home() {
   // codes in the deployed site, not merely their visual presentation.
   const publicEntries = itinerary.map((entry) => ({
     ...entry,
-    Details: redactForPublishing(entry.Details),
+    comment: redactForPublishing(entry.comment),
   }));
 
   const publicContacts = Object.entries(contacts as Record<string, Record<string, string>>).map(([id, contact]) => ({

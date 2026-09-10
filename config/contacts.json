@@ -5,9 +5,11 @@
     "address": "11 Park Street, 1619 Kempton Park, South Africa",
     "phone": "+27 76 666 0274",
     "email": "info@sunrock.co.za",
+    "manager_phone": "+27 83 376 5190",
+    "driver_phone": "+27 60 336 2800",
+    "landline_phone": "+27 11 394 3772",
     "website": "https://www.tripadvisor.co.uk/Hotel_Review-g312579-d1563519-Reviews-Sunrock_Guesthouse-Kempton_Park_Ekurhuleni_Greater_Johannesburg_Gauteng.html",
-    "image": "/images/SunRock.jpg",
-    "notes": "Complimentary airport shuttle from OR Tambo International Airport.\n\nAfter collecting luggage, call or WhatsApp one of the following:\n• Manager on duty: 00/+27 83 376 5190\n• Driver Tony: 00/+27 60 336 2800\n• Landline: 00/+27 11 394 3772\n\nPick-up point: Bus terminal just opposite the International Arrivals Hall, behind the Intercontinental Hotel. Wait in the outside section of the bus terminal.\n\nVehicles have a Sunrock Guesthouse sticker. Shuttle back to airport can be confirmed with reception on arrival.\n\nAirport WIFI is free (no password needed)."
+    "image": "/images/SunRock.jpg"
   },
   "avis-budget": {
     "name": "Avis Budget Car Hire",
@@ -49,8 +51,6 @@
     "name": "AirBnb Seacliff",
     "category": "stay",
     "address": "10 Seacliff Road Apt 202/203, Seacliff, Cape Town, Western Cape 8005, South Africa",
-    "check_in": "14:00",
-    "check_out": "10:00",
     "website": "https://www.airbnb.co.uk/rooms/1153692229287647356",
     "image": "/images/AirBnbSeacliff.jpg"
   },
@@ -71,7 +71,7 @@
     "website": "https://www.airbnb.co.uk/rooms/1298549642096662158",
     "image": "/images/AirBnbFranschhoek.jpg"
   },
-"airbnb-blue-views": {
+  "airbnb-blue-views": {
     "name": "AirBnb Blue Views Terrace",
     "category": "stay",
     "address": "1A Victoria Road, Cape Town, Western Cape 8005, South Africa",

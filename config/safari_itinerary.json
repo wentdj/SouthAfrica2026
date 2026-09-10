@@ -148,6 +148,14 @@
     "links": "https://www.theroyalportfolio.com/the-silo/dining/"
   },
   {
+    "Day": "Mon",
+    "Date": "28th Sept",
+    "Category": "other",
+    "Description": "Restaurant Booking",
+    "contactId": "the-woodlands-eatery",
+    "Details": "The Woodlands Eatery - Dinner for 5 people\nTime: 19:30\nSeating preference: Downstairs\n\nContact: +27 63 710 4742"
+  },
+  {
     "Day": "Tue",
     "Date": "29th Sept",
     "Category": "Transfer",

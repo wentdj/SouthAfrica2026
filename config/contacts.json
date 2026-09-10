@@ -97,5 +97,11 @@
     "email": "dining@thesilohotel.com",
     "website": "https://www.theroyalportfolio.com/the-silo/dining/",
     "image": "/images/TheSilo.jpg"
+  },
+  "the-woodlands-eatery": {
+    "name": "The Woodlands Eatery",
+    "category": "restaurant",
+    "address": "Cape Town, South Africa",
+    "phone": "+27 63 710 4742"
   }
 }

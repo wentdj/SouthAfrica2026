@@ -12,7 +12,6 @@
     "Category": "Accomodation",
     "Description": "Sunrock Guesthouse",
     "contactId": "sunrock-guesthouse",
-    "links": "https://www.tripadvisor.co.uk/Hotel_Review-g312579-d1563519-Reviews-Sunrock_Guesthouse-Kempton_Park_Ekurhuleni_Greater_Johannesburg_Gauteng.html",
     "comment": "Arrival time:  11:00 - 12:00\n\nAfter collecting luggage, call or WhatsApp Manager on duty, Driver Tony or Landline\n\nPick-up point: Bus terminal just opposite the International Arrivals Hall, behind the Intercontinental Hotel. Wait in the outside section of the bus terminal.\n\nVehicles have a Sunrock Guesthouse sticker. Shuttle back to airport can be confirmed with reception on arrival.\n\nAirport WIFI is free (no password needed)."
   },
   {
@@ -20,7 +19,7 @@
     "Date": "20th Sept",
     "Category": "Flight",
     "Description": "JNB → Skukuza (Airlink)",
-    "comment": "10:05 AMO.R. Tambo International Airport (JNB)\nTravel time: 1 hr\n11:05 AMSkukuza Airport (SZK)\nFlight: 4Z861 \nContact: email 4Zschedulechange@flyairlink.com / phone +27 11 451 7300 (option 1)"
+    "comment": "Departure: 10:05 AM - O.R. Tambo International Airport (JNB)\nTravel time: 1 hr\nArrival: 11:05 AM  -Skukuza Airport (SZK)\n\nFlight: 4Z861 \nContact: email 4Zschedulechange@flyairlink.com / phone +27 11 451 7300 (option 1)"
   },
   {
     "Day": "Sun",
@@ -58,7 +57,6 @@
     "Category": "Drive",
     "Description": "Lower Sabie → Jacana River Lodge",
     "contactId": "jacana-river-lodge",
-    "links": "https://jacanariverlodge.com/",
     "comment": "Lower Sabie → Jacana: ~2.5–3 hrs drive"
   },
   {
@@ -114,10 +112,9 @@
     "Day": "Sat",
     "Date": "26th Sept",
     "Category": "Transfer",
-    "Description": "Cape Town → Seacliff Road",
+    "Description": "Cape Town Airport → Seacliff Road",
     "contactId": "bantry-bay-transfer",
-    "links": "https://example-bantry-bay.co.za",
-    "comment": "CTIA– BANTRY BAY, 5 pax, Matt Davies, R 640.00 Date: 26 September 2026 Time: 16h05"
+    "comment": "CTIA– BANTRY BAY, 5 pax\nDate: 26 September 2026\nTime: 16h05"
   },
   {
     "Day": "Sat",
@@ -125,13 +122,21 @@
     "Category": "Accomodation",
     "Description": "AirBnb (Seacliff)",
     "contactId": "airbnb-seacliff",
-    "links": "https://www.airbnb.co.uk/rooms/1153692229287647356",
     "comment": "Check In: 14:00\nCheck out: 10:00"
+  },
+  {
+    "Day": "Sat",
+    "Date": "26th Sept",
+    "Category": "other",
+    "Description": "Mojo Market",
+    "comment": "Get dinner at Mojo Market, checkout Seapoint"
   },
   {
     "Day": "Sun",
     "Date": "27th Sept",
     "Category": "Day Trip",
+    "Description": "Cape Town Day Trip",
+    "contactId": "bantry-bay-transfer",
     "comment": "-Scenic drive through Muizenberg\n-Stop in Kalk Bay to explore the harbour, cafés and boutique shops\n-Continue to Simon's Town\n-Visit Boulders Beach to see the famous African Penguin Colony (entry fees excluded)\n-Enjoy lunch in Simon's Town (own account)\n-Visit the Cape of Good Hope Nature Reserve, including Cape Point and the Cape of Good Hope (entrance fees and Flying Dutchman Funicular excluded)\n-Travel along the spectacular Chapman's Peak Drive\n-Drive through Hout Bay\n-Sunset drinks in Camps Bay (own account)\n\n10-hour Cape Peninsula tour, 5 pax, Matt Davies, R4150.00\nDate: 27 September 2026 · 09h00–19h00\n(10 hours booked, up to 250 km)"
   },
   {
@@ -144,9 +149,15 @@
     "Day": "Mon",
     "Date": "28th Sept",
     "Category": "other",
+    "Description": "VA Waterfront / Time Out Market",
+    "comment": "Stroll arpound VA Waterfront and get lunch at Time Out Market"
+  },
+  {
+    "Day": "Mon",
+    "Date": "28th Sept",
+    "Category": "other",
     "Description": "Sunset Cocktails",
     "contactId": "the-silo-hotel",
-    "links": "https://www.theroyalportfolio.com/the-silo/dining/",
     "comment": "The Rooftop at The Silo Hotel - Sunset Cocktails\n5 people\nTime: 17:30\nReference: CC3978800"
   },
   {
@@ -163,7 +174,6 @@
     "Category": "Transfer",
     "Description": "Seacliff Road → Franschhoek",
     "contactId": "cape-town-group",
-    "links": "https://www.capetowngroup.co.za",
     "comment": "BANTRY BAY–FRANSCHHOEK\nDate: 29 September 2026 \nTime: 10h00"
   },
   {
@@ -180,7 +190,6 @@
     "Category": "other",
     "Description": "Restaurant Booking",
     "contactId": "lapetitecolombe",
-    "links": "https://www.lacolombe.restaurant/la-petite-colombe",
     "comment": "La Petite Colombe - Dinner for 5 people\nMixed menu (standard and vegetarian options)\nTime: 19:00"
   },
   {
@@ -199,8 +208,8 @@
     "Day": "Fri",
     "Date": "2nd Oct",
     "Category": "Transfer",
+    "Description": "Franschhoek → CampsBay",
     "contactId": "cape-town-group",
-    "links": "https://www.capetowngroup.co.za",
     "comment": "FRANSCHHOEK–CAMPSBAY,5pax\nDate: 02 October 2026\nTime: 10h00"
   },
   {
@@ -215,8 +224,8 @@
     "Day": "Sat",
     "Date": "3rd Oct",
     "Category": "Transfer",
+    "Description": "CampsBay → Cape Town Airport",
     "contactId": "cape-town-group",
-    "links": "https://www.capetowngroup.co.za",
     "comment": "FRANSCHHOEK–CAMPSBAY,5pax\nDate: 02 October 2026\nTime: 10h00"
   },
   {
@@ -232,14 +241,19 @@
     "Category": "Accomodation",
     "Description": "Sunrock Guesthouse",
     "contactId": "sunrock-guesthouse",
-    "links": "https://www.tripadvisor.co.uk/Hotel_Review-g312579-d1563519-Reviews-Sunrock_Guesthouse-Kempton_Park_Ekurhuleni_Greater_Johannesburg_Gauteng.html",
-    "comment": "Arrival time:   18:00 - 19:00\nAddress:11 Park Street, 1619 Kempton Park, South Africa\nContact: +27 76 666 0274"
+    "comment": "Arrival time:   18:00 - 19:00"
+  },
+  {
+    "Day": "Sun",
+    "Date": "4th Oct",
+    "Category": "Day Trip",
+    "comment": "Emperors Palace"
   },
   {
     "Day": "Sun",
     "Date": "4th Oct",
     "Category": "Flight",
     "Description": "JNB → London (Virgin)",
-    "comment": "8:15 PMO.R. Tambo International Airport (JNB)\nTravel time: 11 hr 5 minOvernight\n6:20 AM+1Heathrow Airport (LHR)\n\nFlight: VS450"
+    "comment": "Departure: 8:15 PM - O.R. Tambo International Airport (JNB)\nTravel time: 11 hr 5 min\nArrival: 6:20 AM - Heathrow Airport (LHR)\n\nFlight: VS450"
   }
 ]
